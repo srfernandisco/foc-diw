@@ -1,0 +1,121 @@
+div.container-fluid{
+	width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+div.row{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+div.container{
+	width: 70%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: 15%;
+}
+div.col-12{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+div.col-6{
+	-webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+h1{
+    font-size: 3rem;
+    margin-top: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+img.img-fluid{
+	max-width: 100%;
+    height: auto;
+}
+nav{
+	position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #4e4b4b;
+}
+nav .brand{
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	font-style: oblique;	
+	list-style: none;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-left: 1rem;
+}
+nav ul{
+	display: flex;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav a{
+	padding: 1rem 1rem;
+	text-decoration: none;
+	color: #fff;
+	transition: color .5s;
+	transition: background-color .5s;
+}
+nav a:hover{
+	padding: 1rem 1rem;
+	color: #4e4b4b;
+	background-color: #fff;
+}
+nav li{
+	display: list-item;
+    list-style: none;
+}
+footer{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #4e4b4b;
+	text-align: center;
+	color: #fff;
+	margin-top: 3rem;
+}
+@media (max-width: 998px) {
+	div.container{
+		width: 100%;
+	    padding-right: 1rem;
+	    padding-left: 1rem;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+}
