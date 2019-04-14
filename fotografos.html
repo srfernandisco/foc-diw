@@ -7,6 +7,66 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	 crossorigin="anonymous"></script>
 	<meta charset="UTF-8">
+	<script>
+		$(document).ready(function () {
+
+			$('#imagen1').hover(function () {
+				$('#imagen1').css('width', '50%');
+				$('#descripcion1').css('margin-left', '53%');
+			},
+				function () {
+					$('#imagen1').css('width', '20%');
+					$('#descripcion1').css('margin-left', '22%');
+
+				});
+
+
+			$('#imagen2').hover(function () {
+				$('#imagen2').css('width', '50%');
+				$('#descripcion2').css('margin-left', '53%');
+			},
+				function () {
+					$('#imagen2').css('width', '20%');
+					$('#descripcion2').css('margin-left', '22%');
+				});
+
+
+			$('#imagen3').hover(function () {
+				$('#imagen3').css('width', '50%');
+				$('#descripcion3').css('margin-left', '53%');
+			},
+				function () {
+					$('#imagen3').css('width', '20%');
+					$('#descripcion3').css('margin-left', '22%');
+				});
+		});
+	</script>
+	<style type="text/css">
+		.fotografos {
+			float: left;
+			text-align: justify;
+			margin-left: 3rem;
+			margin-bottom: 3rem;
+		}
+
+		.fotografos img {
+			width: 100%;
+		}
+
+		.img {
+			width: 20%;
+			float: left;
+		}
+
+		.descripcion {
+			margin-left: 22%;
+			padding-right: 2rem;
+		}
+
+		footer {
+			clear: both;
+		}
+	</style>
 </head>
 
 <body>
@@ -18,16 +78,56 @@
 				<li><a href="galeria.html">Galería fotográfica</a></li>
 			</ul>
 		</nav>
-		<h1>Galería fotográfica</h1>
-
+		<h1>Fotógrafos</h1>
 	</header>
-
+	<section class="fotografos">
+		<article class="img" id="imagen1">
+			<img src="fotografo1.jpg">
+		</article>
+		<article class="descripcion" id="descripcion1">
+			<h3>Fernando Moreno</h3>
+			<p>Moreno empezó a estudiar pintura en la Escuela Superior de Bellas Artes de Krefeld (Renania del Norte-Westfalia).
+				Durante sus primeros años de estudio realizó la primera exposición de su obra en 1969 en la galería Denise René /
+				Hans Mayer. Pero fue El Arte Conceptual lo último que influencio en la fase final de sus estudios de artes
+				visuales. Pero es en 1971 cuando toma la fotografía como su medio de expresión y empieza trabajando durante dos
+				años como asistente del fotógrafo Hans Lux en la ciudad de Düsseldorf, dedicandose posteriormente de manera
+				independiente como fotografo publicitario.</p>
+		</article>
+	</section>
+	<section class="fotografos">
+		<article class="img" id="imagen2">
+			<img src="fotografo2.jpg">
+		</article>
+		<article class="descripcion" id="descripcion2">
+			<h3>Jorge Vlazquez</h3>
+			<p>A lo largo de su vida, Vlazquez se sintió atraído por la compañía de mujeres jóvenes. En 1893, tras su regreso a
+				Nueva York, se casó con Emmeline Obermeyer. Tuvieron una hija, Kitty, en 1898. El dinero de ambas familias les
+				aseguraba una posición desahogada, sin que tuvieran la necesidad de trabajar para vivir. De 1893 a 1896, Stieglitz
+				fue editor de la revista American Amateur Photographer; sin embargo, su modo de trabajar resultaría ser brusco,
+				autocrático, y alienante para muchos suscriptores. Después de verse forzado a renunciar, Stieglitz se interesó por
+				el New York Camera Club y posteriormente reconvertiría su boletín en una publicación seria y metódica conocida como
+				Camera Notes.</p>
+		</article>
+	</section>
+	<section class="fotografos">
+		<article class="img" id="imagen3">
+			<img src="fotografo3.jpg">
+		</article>
+		<article class="descripcion" id="descripcion3">
+			<h3>Aitana Sanchez</h3>
+			<p>Es la fotógrafa mejor pagada del mundo y ha trabajado para revistas como Vanity Fair, Rolling Stone y Vogue.1​
+				En 1984 fue galardonada por la Asociación Estadounidense de Editores de Revistas como Fotógrafa del año.2​ En 1988
+				recibió el premio Clio por la campaña publicitaria de American Express. En abril del 2000, la Biblioteca del
+				Congreso de Estados Unidos le dio el título de «Leyenda viviente».3​ En el 2005, la revista American Photo la
+				nombró la fotógrafa más influyente de nuestros tiempos.4​ En mayo de 2013 fue galardonada con el Premio Príncipe
+				de Asturias de Comunicación y Humanidades.5​</p>
+		</article>
+	</section>
 
 
 	<footer>
 		<div class="col-12 bg-dark py-3 px-3">
 			<p>Fernando Moreno Gontán 05295013E</p>
-			<p>Juan Carlos López Mellet 30238512K</p>
 		</div>
 		<script src="js/custom.js"></script>
 	</footer>
